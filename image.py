@@ -3,6 +3,7 @@ import os
 from PIL import Image,ImageFilter,ImageDraw
 import numpy as np
 import h5py
+from math import floor
 from PIL import ImageStat
 import cv2
 
@@ -37,7 +38,7 @@ def load_data(img_path,train = True):
     
     
     
-    target = cv2.resize(target,(target.shape[1]/8,target.shape[0]/8),interpolation = cv2.INTER_CUBIC)*64
+    target = cv2.resize(target,(floor(target.shape[1]/8),floor(target.shape[0]/8)),interpolation = cv2.INTER_CUBIC)*64
     
     
     return img,target

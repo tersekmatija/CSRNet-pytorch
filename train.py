@@ -162,7 +162,7 @@ def train(train_list, model, criterion, optimizer, epoch):
                    data_time=data_time, loss=losses))
     
 def validate(val_list, model, criterion):
-    print ('begin test')
+    print('begin test')
     test_loader = torch.utils.data.DataLoader(
     dataset.listDataset(val_list,
                    shuffle=False,
