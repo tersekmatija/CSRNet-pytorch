@@ -1,8 +1,8 @@
 import glob
 import random
 
-trains = glob.glob("./data/ShanghaiA/train_data/images/*.jpg")
-tests = glob.glob("./data/ShanghaiA/test_data/images/*.jpg")
+trains = glob.glob("/home/matijamasaibb/codesmatijamasa/CSRNet-pytorch/data/ShanghaiA/train_data/images/*.jpg")
+tests = glob.glob("/home/matijamasaibb/codesmatijamasa/CSRNet-pytorch/data/ShanghaiA/test_data/images/*.jpg")
 
 random.shuffle(trains)
 
